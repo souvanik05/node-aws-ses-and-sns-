@@ -24,28 +24,31 @@
    Navigate to the project directory:
    ```
 
-bash
-cd project folder
+   cd project folder
 
-Install dependencies:
-npm install
+   Install dependencies:
+   npm install
+
+## Configuration
 
 2. Configuration
    Before using the application, you need to configure your AWS credentials and set up your environment variables. Follow these steps:
    AWS Credentials: Make sure you have AWS credentials configured either through environment variables, AWS CLI configuration, or IAM policy. You need to setup ses and sns also
 
-Environment Variables: Create a .env file in the root directory of the project and provide the following variables:
+   Environment Variables: Create a .env file in the root directory of the project and provide the following variables:
 
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_REGION=
-Replace your-aws-region, your-access-key-id, your-secret-access-key with your actual AWS region, access key ID, secret access key respectively.
+   AWS_ACCESS_KEY_ID=
+   AWS_SECRET_ACCESS_KEY=
+   AWS_REGION=
+   Replace your-aws-region, your-access-key-id, your-secret-access-key with your actual AWS region, access key ID, secret access key respectively.
+
+## Contributing
 
 3. Contributing
    Contributions are welcome! If you'd like to add new features, improve existing ones, or fix issues, please follow these steps:
 
-Fork the repository.
-Create a new branch: git checkout -b feature/new-feature.
-Make your changes and commit them: git commit -am 'Add new feature'.
-Push to the branch: git push origin feature/new-feature.
-Submit a pull request.
+   Fork the repository.
+   Create a new branch: git checkout -b feature/new-feature.
+   Make your changes and commit them: git commit -am 'Add new feature'.
+   Push to the branch: git push origin feature/new-feature.
+   Submit a pull request.
