@@ -20,7 +20,7 @@
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/node-aws-ses-sns-sms-email-sender.git
+   git clone https://github.com/souvanik05/node-aws-ses-and-sns-.git
    Navigate to the project directory:
    ```
 
