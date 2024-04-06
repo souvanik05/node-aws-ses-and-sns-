@@ -1,0 +1,28 @@
+{
+  "name": "souvanik-sns-ses",
+  "version": "1.0.0",
+  "description": "This project briefly describe about the implementation of aws ses and sns service and uses best practices",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws",
+    "sns",
+    "ses",
+    "node-js",
+    "javascript"
+  ],
+  "author": "Souvanik Saha",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.120.0",
+    "body-parser": "^1.20.2",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.19.2",
+    "express-fileupload": "^1.5.0",
+    "mongoose": "^5.13.7",
+    "winston": "^3.3.3",
+    "winston-mongodb": "^4.0.1"
+  }
+}
