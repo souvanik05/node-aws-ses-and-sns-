@@ -1,1 +1,1 @@
-# node-aws-ses-and-sns-
+# node-aws-ses-and-sns
