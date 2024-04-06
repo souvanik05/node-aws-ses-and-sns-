@@ -1,7 +1,6 @@
 const ServiceProviderInterface = require('./ServiceProviderInterface');
 const AWS = require('aws-sdk');
 const awsConfig = require('../config/awsConfig');
-const AwsHelper = require('../utils/AwsHelper');
 const path = require('path'); 
 const fs = require('fs'); 
 
@@ -27,6 +26,7 @@ class AWSServiceProvider extends ServiceProviderInterface {
       }
   }
 
+  
   async sendEmail(to, subject, message, attachments) {
     try {
       const templatePath = path.join(__dirname, '..', 'views', 'emailTemplate.html');
@@ -34,7 +34,7 @@ class AWSServiceProvider extends ServiceProviderInterface {
       const formattedHtmlBody = htmlBody.replace('{{subject}}', subject).replace('{{message}}', message);
       const rawEmail = [
         `To: ${to}`,
-        `From: 'souvascloud@gmail.com`,
+        `From: yourmail.com`,
         `Subject: ${subject}`,
         `MIME-Version: 1.0`,
         `Content-Type: multipart/mixed; boundary="NextPart"`,
