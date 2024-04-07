@@ -59,20 +59,21 @@ class App {
   }
 
   configureLogging() {
+    const loggerFactory = LoggerFactory.getInstance();
     loggerConfig.providers.forEach(provider => {
-      const logger = LoggerFactory.createLogger(provider);
-      logger.info('--------Logging Enabled--------', provider);
+        const logger = loggerFactory.createLogger(provider);
+        logger.info('--------Logging Enabled--------', provider);
     });
-  }
+}
 
-  setupErrorHandling() {
-    this.app.use((err, req, res, next) => {
-      const logger = LoggerFactory.getLogger();
+
+setupErrorHandling() {
+  this.app.use((err, req, res, next) => {
+      const logger = LoggerFactory.getLogger('console'); 
       logger.error(`Error occurred: ${err.message}`);
       res.status(500).json({ error: 'Internal Server Error' });
-    });
-  }
+  });
+}
 }
 
 const server = new App();
-module.exports = server;
